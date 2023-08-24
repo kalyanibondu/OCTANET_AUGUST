@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGUKT's</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="https://www.rgukt.in/" target="_blank">Home</a></li>
+                <li><a href="https://www.rgukt.in/Institute.php?view=Career" target="_blank">Careers</a></li>
+                <li><a href="https://www.rgukt.in/Institute.php?view=ContactUs" target="_blank">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>AP's<br><span>RGUKTs</span></h2>
+                <p>Rajiv Gandhi University of Knowledge Technologies (RGUKT) is a state university located in Andhra Pradesh, India. It was established in 2008 with the aim of providing quality education to the rural youth of Andhra Pradesh in the fields of engineering, technology, and management.The university has four campuses located in Nuzvid,Ongole,R.K. Valley and Srikakulam. </p>
+                <a href="http://www.rguktong.ac.in/" target="_blank">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/img1.jpg" class="star">
+            </div>
+
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/img1.jpg" onclick="imgSlider('./images/img1.jpg'); changeCircleColor('#ffd670')"></li>
+            <li><img src="./images/img2.png" onclick="imgSlider('./images/img2.png');  changeCircleColor('#ffc8dd')"></li>
+            <li><img src="./images/img3.png" onclick="imgSlider('./images/img3.png');  changeCircleColor('#ff9770')"></li>
+            <li><img src="./images/img4.jpg" onclick="imgSlider('./images/img4.jpg');  changeCircleColor('#bbd0ff')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/RGUKTOfficial/" target="_blank"><img src="./images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/rgukt_updates/"target="_blank"><img src="./images/instagram.png"></a></li>
+            <li><a href="https://twitter.com/RGUKT_RKVALLEY" target="_blank" ><img src="./images/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.star').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
